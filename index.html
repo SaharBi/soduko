@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SuDoKu</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="container" data-aos="fade-down">
+        <h1 data-aos="zoom-out"> SuDoKu</h1>
+        <div id="mainContent" data-aos="fade-up">
+            <form>
+                <div class="form-group">
+                  <label>User Name</label>
+                  <input type="text" class="form-control" id="userName">
+                </div>
+                <div class="form-group">
+                  <label>Password</label>
+                  <input type="password" class="form-control" id="password">
+                </div>
+                <button type='button' id="sub" class="btn btn-secondary" onclick="validFunc()">Submit</button>
+              </form>
+        </div>
+    </div>
+    
+
+    <script src='script.js'></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500,
+        });
+      </script>
+</body>
+</html>
